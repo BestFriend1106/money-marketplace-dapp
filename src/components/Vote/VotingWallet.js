@@ -16,7 +16,7 @@ import { useComptroller, useVenusLens } from '../../hooks/useContract';
 
 const VotingWalletWrapper = styled.div`
   width: 100%;
-  border-radius: 25px;
+  border-radius: 10px;
   background-color: var(--color-bg-primary);
   padding: 36px 22px 48px 15px;
 
@@ -96,7 +96,7 @@ const VotingWalletWrapper = styled.div`
     width: 50%;
     height: 46px;
     border-radius: 5px;
-    background-image: linear-gradient(to right, #f2c265, #f7b44f);
+    background-image: linear-gradient(to right,rgba(90, 220, 116, 0.6),rgba(100, 250, 120, 0.6));
     .MuiButton-label {
       font-size: 13px;
       font-weight: 500;

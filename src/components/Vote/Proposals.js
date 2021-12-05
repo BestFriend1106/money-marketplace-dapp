@@ -15,8 +15,8 @@ import { useToken, useVote } from '../../hooks/useContract';
 
 const ProposalsWrapper = styled.div`
   width: 100%;
-  border-radius: 25px;
-  background-color: #181c3a;
+  border-radius: 10px;
+  background-color: var(--color-bg-primary);
   padding: 20px 30px;
 
   .proposal-head {
@@ -30,7 +30,7 @@ const ProposalsWrapper = styled.div`
       width: 150px;
       height: 40px;
       border-radius: 5px;
-      background-image: linear-gradient(to right, #f2c265, #f7b44f);
+      background-image: linear-gradient(to right,rgba(90, 220, 116, 0.6),rgba(100, 250, 120, 0.6));
       .MuiButton-label {
         font-size: 14px;
         font-weight: 500;

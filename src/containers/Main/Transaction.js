@@ -228,7 +228,7 @@ const AssetSelectWrapper = styled.div`
   .ant-select {
     .ant-select-selection {
       margin-left: 8px;
-      border: 2px solid #20345e;
+      border: 2px solid rgba(121,242,192,.09411764705882353);
       background-color: transparent;
       color: var(--color-text-main);
       font-size: 17px;
@@ -332,7 +332,7 @@ function Transaction({ getTransactionHistory }) {
               style={{ width: 200, marginRight: 10 }}
               getPopupContainer={() => document.getElementById('event-type')}
               dropdownMenuStyle={{
-                backgroundColor: '#090d27'
+                backgroundColor: 'rgb(31, 31, 31)'
               }}
               dropdownClassName="asset-select"
               onChange={val => {

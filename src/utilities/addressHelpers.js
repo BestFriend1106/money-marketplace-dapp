@@ -1,7 +1,7 @@
 import addresses from '../config/contracts';
 
 const chainId = process.env.REACT_APP_CHAIN_ID;
-
+console.log("chainId", process.env)
 export const getVaiTokenAddress = () => {
   return addresses.vaiToken[chainId];
 };

@@ -7,7 +7,7 @@ import { useBlock } from '../../hooks/useBlock';
 const FooterWrapper = styled.div`
   height: 50px;
   padding: 26px 0px;
-  background-color: var(--color-bg-main);
+  background-color: rgba(31, 31, 31, 0.85);
   display: flex;
   justify-content: flex-end;
   align-items: center;

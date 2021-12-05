@@ -10,9 +10,9 @@ import { useMarketsUser } from '../../hooks/useMarketsUser';
 const CardWrapper = styled.div`
   width: 100%;
   height: 100%;
-  border-radius: 25px;
-  background-color: #181c3a;
-  background-image: linear-gradient(to right, #f2c265, #f7b44f);
+  border-radius: 10px;
+  background-color: var(--color-bg-primary);
+  background-image: linear-gradient(to right,rgba(90, 220, 116, 0.6),rgba(100, 250, 120, 0.6));
   padding: 20px 30px;
 
   .usd-price {

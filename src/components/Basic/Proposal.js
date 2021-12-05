@@ -74,7 +74,7 @@ const ProposalWrapper = styled.div`
     button {
       height: 32px;
       border-radius: 5px;
-      background-image: linear-gradient(to right, #f2c265, #f7b44f);
+      background-image: linear-gradient(to right,rgba(90, 220, 116, 0.6),rgba(100, 250, 120, 0.6));
       .MuiButton-label {
         font-size: 12px;
         font-weight: 500;

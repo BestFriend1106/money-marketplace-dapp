@@ -8,7 +8,7 @@ import { BASE_BSC_SCAN_URL } from '../../../config';
 const ProposalUserWrapper = styled.div`
   width: 100%;
   height: 67px;
-  border-radius: 25px;
+  border-radius: 10px;
   background-color: var(--color-bg-primary);
   padding: 0 52px;
 

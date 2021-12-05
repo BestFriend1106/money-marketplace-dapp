@@ -52,8 +52,8 @@ function CircleProgressBar({ label, percent, width }) {
       <Progress
         type="circle"
         strokeColor={{
-          '0%': '#f2c265',
-          '100%': '#f7b44f'
+          '0%': '#9bd943',
+          '100%': '#9fd943'
         }}
         strokeWidth={4}
         strokeLinecap="square"

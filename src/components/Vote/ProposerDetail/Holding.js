@@ -75,7 +75,7 @@ function Holding({ address, holdingInfo }) {
           <div className="value">{format(holdingInfo.votes || '0.0000')}</div>
           <Progress
             percent={100}
-            strokeColor="#d99d43"
+            strokeColor="#9bd943"
             strokeWidth={7}
             showInfo={false}
           />

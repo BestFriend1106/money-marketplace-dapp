@@ -274,7 +274,7 @@ function BorrowTab({ asset, changeTab, onCancel, setSetting }) {
           </div>
           <Progress
             percent={newBorrowPercent.toNumber()}
-            strokeColor="#d99d43"
+            strokeColor="#9bd943"
             strokeWidth={7}
             showInfo={false}
           />

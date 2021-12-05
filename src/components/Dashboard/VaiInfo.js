@@ -16,7 +16,7 @@ import { getVaiTokenAddress } from '../../utilities/addressHelpers';
 const CardWrapper = styled.div`
   width: 100%;
   height: 100%;
-  border-radius: 25px;
+  border-radius: 10px;
   background-color: var(--color-bg-primary);
   padding: 37px 16px;
 

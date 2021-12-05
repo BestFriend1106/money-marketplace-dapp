@@ -47,7 +47,7 @@ const TableWrapper = styled.div`
   }
 
   .total-info {
-    background: #0f1331;
+    background: rgba(31, 31, 3, 0.6);
     border-radius: 16px;
     margin: 30px 80px;
     padding: 20px 40px;

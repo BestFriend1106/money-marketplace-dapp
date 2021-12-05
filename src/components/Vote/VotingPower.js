@@ -9,8 +9,8 @@ const VotingPowerWrapper = styled.div`
   width: 100%;
   height: 100%;
   padding: 14px 56px 14px 56px;
-  border-radius: 25px;
-  background-image: linear-gradient(to right, #f2c265, #f7b44f);
+  border-radius: 10px;
+  background-image: linear-gradient(to right,rgba(90, 220, 116, 0.6),rgba(100, 250, 120, 0.6));
 
   .title {
     font-size: 20px;

@@ -20,7 +20,7 @@ const LineProgressBarWrapper = styled.div`
 
   .ant-progress {
     .ant-progress-inner {
-      background-color: #d99d43;
+      background-color: #9bd943;
     }
   }
 `;

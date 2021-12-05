@@ -21,8 +21,8 @@ import { useVaiVault } from '../../hooks/useContract';
 const CardWrapper = styled.div`
   width: 100%;
   height: 100%;
-  border-radius: 25px;
-  background-color: #181c3a;
+  border-radius: 10px;
+  background-color: var(--color-bg-primary);
   padding: 35px;
 
   .label {

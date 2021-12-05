@@ -10,7 +10,10 @@ const MainLayoutWrapper = styled.div`
   width: 100%;
   display: flex;
   background-color: var(--color-bg-main);
-
+  background-image: url(https://alienworlds.io/wp-content/uploads/2021/10/alienworlds-db-bg-master_comp.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   .main {
     height: 100vh;
 
@@ -55,10 +58,10 @@ function MainLayout({ title, isHeader, children }) {
   return (
     <MainLayoutWrapper>
       <Row>
-        <Column xs="12" sm="1.5">
+        <Column xs="12" sm="2">
           <Sidebar />
         </Column>
-        <Column xs="12" sm="10.5" className="main">
+        <Column xs="12" sm="10" className="main">
           <Row>
             {isHeader && (
               <Column xs="12">

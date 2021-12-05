@@ -13,7 +13,7 @@ import { BASE_BSC_SCAN_URL } from '../../../config';
 const ProposerInfoWrapper = styled.div`
   width: 100%;
   height: 100%;
-  border-radius: 25px;
+  border-radius: 10px;
   background-color: var(--color-bg-primary);
   padding: 25px 40px 28px;
 

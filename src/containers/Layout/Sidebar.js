@@ -24,7 +24,6 @@ import { getVaiVaultAddress } from '../../utilities/addressHelpers';
 const SidebarWrapper = styled.div`
   height: 100vh;
   min-width: 108px;
-  border-radius: 0 16px 16px 0;
   background-color: var(--color-bg-primary);
   display: flex;
   flex-direction: column;
@@ -74,6 +73,7 @@ const MainMenu = styled.div`
 
   .xvs-active-icon {
     display: none;
+    filter: hue-rotate(103deg);
   }
 
   .prdt-logo {
@@ -249,7 +249,40 @@ const MobileMenu = styled.div`
     }
   }
 `;
-
+const MenuItem = styled(NavLink)`
+  font-size: 20px;
+  span {
+    font-size: 20px;
+  }
+  img {
+    width: 20px !important;
+    margin: 0 10% !important;
+  }
+  i {
+    width: 20px !important;
+  }
+  &>svg {
+    margin: 0 10% !important;
+    width: 20px !important;
+  }
+`
+const ExternalMenuItem = styled.a`
+  font-size: 20px;
+  span {
+    font-size: 20px;
+  }
+  img {
+    width: 20px !important;
+    margin: 0 10% !important;
+  }
+  i {
+    width: 20px !important;
+  }
+  &>svg {
+    margin: 0 10% !important;
+    width: 20px !important;
+  }
+`
 const { Option } = Select;
 
 const format = commaNumber.bindWith(',', '.');
@@ -366,23 +399,23 @@ function Sidebar({ history, settings, setSetting, getGovernanceVenus }) {
         </NavLink>
       </Logo>
       <MainMenu>
-        <NavLink
+        <MenuItem
           className="flex flex-start align-center"
           to="/dashboard"
           active-class-name="active"
         >
           <Icon type="home" theme="filled" />
           <Label primary>Dashboard</Label>
-        </NavLink>
-        <NavLink
+        </MenuItem>
+        <MenuItem
           className="flex flex-start align-center"
           to="/vote"
           active-class-name="active"
         >
           <Icon type="appstore" />
           <Label primary>Vote</Label>
-        </NavLink>
-        <NavLink
+        </MenuItem>
+        <MenuItem
           className="flex flex-start align-center"
           to="/xvs"
           active-class-name="active"
@@ -390,33 +423,33 @@ function Sidebar({ history, settings, setSetting, getGovernanceVenus }) {
           <img className="xvs-icon" src={XVSIcon} alt="xvs" />
           <img className="xvs-active-icon" src={XVSActiveIcon} alt="xvs" />
           <Label primary>XVS</Label>
-        </NavLink>
-        <NavLink
+        </MenuItem>
+        <MenuItem
           className="flex flex-start align-center"
           to="/market"
           active-class-name="active"
         >
           <Icon type="area-chart" />
           <Label primary>Market</Label>
-        </NavLink>
-        <NavLink
+        </MenuItem>
+        <MenuItem
           className="flex flex-start align-center"
           to="/vault"
           active-class-name="active"
         >
           <Icon type="golden" theme="filled" />
           <Label primary>Vault</Label>
-        </NavLink>
-        <NavLink
+        </MenuItem>
+        <MenuItem
           className="flex flex-start align-center"
           to="/transaction"
           active-class-name="active"
         >
           <svg
             className="transaction"
-            width="12"
-            height="16"
-            viewBox="0 0 12 16"
+            width="20"
+            height="20"
+            viewBox="0 0 8 16"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -427,12 +460,13 @@ function Sidebar({ history, settings, setSetting, getGovernanceVenus }) {
               fill="white"
             />
           </svg>
-          <div className="flex flex-column align-center">
+          {/* <div className="flex flex-column align-center">
             <Label primary>Transaction</Label>
             <Label primary>History</Label>
-          </div>
-        </NavLink>
-        <a
+          </div> */}
+          <Label primary>Transaction History</Label>
+        </MenuItem>
+        <ExternalMenuItem
           // eslint-disable-next-line react/jsx-no-target-blank
           target="_blank"
           className="flex flex-start align-center"
@@ -441,17 +475,17 @@ function Sidebar({ history, settings, setSetting, getGovernanceVenus }) {
         >
           <img src={prdtImg} alt="prdt" className="prdt-logo" />
           <Label primary>XVS Prediction</Label>
-        </a>
+        </ExternalMenuItem>
       </MainMenu>
       <FaucetMenu>
         {process.env.REACT_APP_CHAIN_ID === '97' && (
-          <NavLink
+          <MenuItem
             className="flex just-center"
             to="/faucet"
             active-class-name="active"
           >
             <Label primary>Faucet</Label>
-          </NavLink>
+          </MenuItem>
         )}
       </FaucetMenu>
       {account && (
@@ -485,7 +519,7 @@ function Sidebar({ history, settings, setSetting, getGovernanceVenus }) {
           style={{ width: 120, marginRight: 10 }}
           getPopupContainer={() => document.getElementById('main-menu')}
           dropdownMenuStyle={{
-            backgroundColor: '#090d27'
+            backgroundColor: 'rgba(31, 31, 3, 0.6)'
           }}
           dropdownClassName="asset-select"
           onChange={onChangePage}

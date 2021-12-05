@@ -18,8 +18,8 @@ import { vtokenDecimals } from '../../config';
 
 const CardWrapper = styled.div`
   width: 100%;
-  border-radius: 25px;
-  background-color: #181c3a;
+  border-radius: 10px;
+  background-color: var(--color-bg-primary);
   padding: 28px 25px 27px 25px;
 
   .asset-img {
@@ -228,7 +228,7 @@ function Overview({ settings, getMarketHistory }) {
                 style={{ width: 150, marginRight: 10 }}
                 getPopupContainer={() => document.getElementById('asset')}
                 dropdownMenuStyle={{
-                  backgroundColor: '#090d27'
+                  backgroundColor: 'rgb(31, 31, 31)'
                 }}
                 dropdownClassName="asset-select"
                 onChange={handleChangeAsset}

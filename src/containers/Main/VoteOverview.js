@@ -31,7 +31,7 @@ const VoteOverviewWrapper = styled.div`
     button {
       width: 120px;
       height: 40px;
-      background-image: linear-gradient(to right, #f2c265, #f7b44f);
+      background-image: linear-gradient(to right,rgba(90, 220, 116, 0.6),rgba(100, 250, 120, 0.6));
       border-radius: 10px;
       .MuiButton-label {
         font-size: 16px;
